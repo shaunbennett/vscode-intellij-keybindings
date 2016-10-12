@@ -1,0 +1,87 @@
+[
+    {
+        // Delete line at caret
+        "key": "ctrl+y",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadOnly"
+    },
+    {
+        // Go to class
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        // Select successively increasing code blocks
+        // Doesn't behave exactly like IntellIJ
+        "key": "ctrl+w",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus"
+    },
+    {
+        // Decrease current selection to previous state
+        "key": "ctrl+shift+w",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus"
+    },
+    {
+        // Basic code completion
+        "key": "ctrl+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        // Complete statement
+        // Doesn't behave exactly like IntellIJ
+        "key": "ctrl+shift+enter",
+        "command": "acceptSelectedSuggestion",
+        "when": "editorTextFocus"
+    },
+    {
+        // Parameter info
+        "key": "ctrl+p",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorTextFocus"
+    },
+    {
+        // Comment/uncomment with line comment
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        // Comment/uncomment with block comment
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus"
+    },
+    {
+        // Show intention actions and quick-fixes
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorTextFocus"
+    },
+    {
+        // Reformat code
+        "key": "ctrl+alt+l",
+        "command": "editor.action.format",
+        "when": "editorTextFocus"
+    },
+    {
+        // Duplicate current line or selected block
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        // Start new line
+        "key": "shift+enter",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus"
+    },
+    {
+        // Start new line before current
+        "key": "ctrl+alt+enter",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus"
+    }
+]
