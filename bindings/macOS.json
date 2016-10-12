@@ -83,5 +83,15 @@
         "key": "cmd+alt+enter",
         "command": "editor.action.insertLineBefore",
         "when": "editorTextFocus"
+    },
+    {
+        // Navigate Forward
+        "key": "cmd+alt+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        // Navigate Backwards
+        "key": "cmd+alt+left",
+        "command": "workbench.action.navigateBack"
     }
 ]
