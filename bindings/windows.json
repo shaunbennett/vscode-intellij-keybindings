@@ -93,5 +93,27 @@
         // Navigate Backwards
         "key": "ctrl+alt+left",
         "command": "workbench.action.navigateBack"
+    },
+    {
+        // Move line up
+        "key": "ctrl+shift+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        // Move line down
+        "key": "ctrl+shift+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
     }
 ]
